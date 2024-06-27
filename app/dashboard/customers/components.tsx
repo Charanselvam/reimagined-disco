@@ -1,11 +1,13 @@
 // components/TextBox.js
-export const TextBox = ({ name, value, onChange, size }) => {
+export const TextBox = ({ name, value, onChange, size ,placeholder,required}) => {
   return (
     <input
       type="text"
       name={name}
       value={value}
       onChange={onChange}
+      placeholder={placeholder}
+      required={required}
       className="p-2 border rounded"
       size={size}
     />
